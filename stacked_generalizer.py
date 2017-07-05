@@ -214,7 +214,7 @@ class StackedGeneralizer(object):
 		self.fit_blending_model(X_blend, y)
 
 	def evaluate(self, y, y_pred):
-		print classification_report(y, y_pred)
-		print 'Confusion Matrix:'
-		print confusion_matrix(y, y_pred)
+		print(classification_report(y, y_pred))
+		print('Confusion Matrix:')
+		print(confusion_matrix(y, y_pred))
 		return accuracy_score(y, y_pred)
